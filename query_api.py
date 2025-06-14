@@ -22,6 +22,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+
 # --- Load secrets ---
 with open("secrets.json") as f:
     secrets = json.load(f)
@@ -36,8 +37,6 @@ client = OpenAI(
 conn = psycopg2.connect(secrets["pg_uri"])
 cursor = conn.cursor()
 
-# --- FastAPI app ---
-app = FastAPI()
 
 class QueryRequest(BaseModel):
     question: str
