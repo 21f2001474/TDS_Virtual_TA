@@ -3,7 +3,7 @@ description: "TDS Virtual TA Project Sample (but not the actual evaluation) Ques
 providers:
   - id: https
     config:
-      url: https://4d10-183-83-131-63.ngrok-free.app/api/ # Replace this with your API endpoint
+      url: https://tds-virtual-ta-6j6z.onrender.com/api/ # Replace this with your API endpoint
       method: POST
       headers:
         Content-Type: application/json
@@ -24,7 +24,7 @@ defaultTest:
         method: POST
         headers:
           Content-Type: application/json
-          Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6InRpbGFrLmd1bXJheUBnbWFpbC5jb20ifQ.gZ_CamD9F2bm3Il5WRxjdfnl55APOx1xKyBGFh1AZfg  # Replace with your token
+          Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6InRsa2c3NzU0QGdtYWlsLmNvbSJ9.ET4wpHfdha41YFiVz5hm9KEIGJ5AHExJ3v9yFUID6zg  # Replace with your token
         body: |
           {
             "model": "gpt-4o-mini",
