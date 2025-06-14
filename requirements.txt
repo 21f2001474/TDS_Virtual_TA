@@ -1,0 +1,12 @@
+fastapi
+uvicorn
+pydantic
+httpx
+psycopg2-binary
+numpy
+openai
+tqdm
+tiktoken
+beautifulsoup4
+playwright
+mimetypes

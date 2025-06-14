@@ -8,6 +8,19 @@ from openai import OpenAI
 import base64
 import httpx
 import mimetypes
+from fastapi.middleware.cors import CORSMiddleware
+
+# --- FastAPI app ---
+app = FastAPI()
+
+# --- Enable CORS (after app is created) ---
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"], 
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 # --- Load secrets ---
 with open("secrets.json") as f:
