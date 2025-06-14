@@ -9,4 +9,3 @@ tqdm
 tiktoken
 beautifulsoup4
 playwright
-mimetypes
